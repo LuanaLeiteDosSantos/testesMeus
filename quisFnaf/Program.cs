@@ -1,45 +1,63 @@
 ﻿#region Quiz Fnaf
-string respostaCerta1 = "Golden freddy";
-string respostaCerta2 = "Puppet";
-string respostaCerta3 = "SpringTrap";
-string respostaCerta4 = "Cassidy";
-string respostaCerta5 = "Foxy";
-string respostaCerta6 = "Freddy";
-string resposta1 = "";
-string resposta2 = "";
-string resposta3 = "";
-string resposta4 = "";
-string resposta5 = "";
-string resposta6 = "";
+int respostaCerta1 = 2;
+int respostaCerta2 = 1;
+int respostaCerta3 = 2;
+int respostaCerta4 = 3;
+int respostaCerta5 = 2;
+int respostaCerta6 = 1;
+int resposta1 = 0;
+int resposta2 = 0;
+int resposta3 = 0;
+int resposta4 = 0;
+int resposta5 = 0;
+int resposta6 = 0;
 string respostaSimOuNao = "";
 
-Console.WriteLine($"Qual é o animatronic mais poderoso do Fnaf 1?");
-resposta1 = Console.ReadLine();
+Console.WriteLine($"Qual é o animatronic mais poderoso do Fnaf 1?\n" +
+    $"1 - Puppet\n" +
+    $"2 - Golden Freddy\n" +
+    $"3 - Ballon Boy");
+resposta1 = Convert.ToInt16(Console.ReadLine());
 
 Console.Clear();
 
-Console.WriteLine($"Qual é o animatronic mais poderoso do Fnaf 2?");
-resposta2 = Console.ReadLine();
+Console.WriteLine($"Qual é o animatronic mais poderoso do Fnaf 2?\n" +
+    $"1 - Puppet\n" +
+    $"2 - Mangle\n" +
+    $"3 - Toy Chica");
+resposta2 = Convert.ToInt16(Console.ReadLine());
 
 Console.Clear();
 
-Console.WriteLine($"Qual é o vilão do Fnaf?");
-resposta3 = Console.ReadLine();
+Console.WriteLine($"Qual é o vilão do Fnaf?\n" +
+    $"1 - Freddy\n" +
+    $"2 - SpringTrap\n" +
+    $"3 - Ballora");
+resposta3 = Convert.ToInt16(Console.ReadLine());
 
 Console.Clear();
 
-Console.WriteLine($"Como é o nome da alma que nao descansará sem sua vingança?");
-resposta4 = Console.ReadLine();
+Console.WriteLine($"Como é o nome da alma que nao descansará sem sua vingança?\n" +
+    $"1 - Gabriel\n" +
+    $"2 - Charllote\n" +
+    $"3 - Cassidy");
+resposta4 = Convert.ToInt16(Console.ReadLine());
 
 Console.Clear();
 
-Console.WriteLine($"Qual é o nome do animatronic mais rápido do primeiro Fnaf?");
-resposta5 = Console.ReadLine();
+Console.WriteLine($"Qual é o nome do animatronic mais rápido do primeiro Fnaf?\n" +
+    $"1 - Bonnie\n" +
+    $"2 - Foxy\n" +
+    $"3 - Freddy");
+resposta5 = Convert.ToInt16(Console.ReadLine());
 
 Console.Clear();
 
-Console.WriteLine($"Qual é o animatronic que representa a imagem da pizzaria?");
-resposta6 = Console.ReadLine();
+Console.WriteLine($"Qual é o animatronic que representa a imagem da pizzaria?\n" +
+    $"1 - Freddy\n" +
+    $"2 - Foxy\n" +
+    $"3 - Chica");
+resposta6 = Convert.ToInt16(Console.ReadLine());
 
 Console.Clear();
 
@@ -107,11 +125,11 @@ respostaSimOuNao = Console.ReadLine();
 if (respostaSimOuNao.ToLower() == "sim")
 {
     Console.WriteLine($"Respostas certas:\n" +
-        $"1º - {respostaCerta1} / Sua resposta: {resposta1}\n" +
-        $"2º - {respostaCerta2} / Sua resposta: {resposta2}\n" +
-        $"3º - {respostaCerta3} / Sua resposta: {resposta3}\n" +
-        $"4º - {respostaCerta4} / Sua resposta: {resposta4}\n" +
-        $"5º - {respostaCerta5} / Sua resposta: {resposta5}\n" +
-        $"6º - {respostaCerta6} / Sua resposta: {resposta6}");
+        $"1º - {respostaCerta1} / Golden Freddy | Sua resposta: {resposta1}\n" +
+        $"2º - {respostaCerta2} / Puppet | Sua resposta: {resposta2}\n" +
+        $"3º - {respostaCerta3} / SpringTrap | Sua resposta: {resposta3}\n" +
+        $"4º - {respostaCerta4} / Cassidy | Sua resposta: {resposta4}\n" +
+        $"5º - {respostaCerta5} / Foxy | Sua resposta: {resposta5}\n" +
+        $"6º - {respostaCerta6} / Freddy | Sua resposta: {resposta6}");
 }
 #endregion
